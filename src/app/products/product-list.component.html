@@ -1,0 +1,9 @@
+<div class='card'>
+    <div>{{pageTitle}}</div>
+
+    <table class="table" *ngIf='products && products.length'>
+        <tbody><tr *ngFor='let product of products'>
+            <td>{{product.productId}}</td>
+        </tr></tbody>
+    </table>
+</div>
